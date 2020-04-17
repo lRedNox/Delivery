@@ -39,6 +39,7 @@ body {
 .input-search {
   width: 306px;
   background-image: url(../img/search.svg);
+  margin-left: auto;
 }
 
 .buttons {
@@ -71,6 +72,9 @@ body {
   margin-right: 6px;
 }
 
+.button-card-text {
+	margin-right: 10px;
+}
 .promoaction {
   box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
   background: #fff1b8 url(../img/promoaction-image.jpeg) no-repeat top -119px right -208px /
@@ -109,7 +113,6 @@ body {
 .section-heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 44px;
 }
 
@@ -120,6 +123,7 @@ body {
   line-height: 42px;
   color: #000000;
   margin: 0;
+  margin-right: 30px;
 }
 
 .card {
@@ -129,6 +133,7 @@ body {
   overflow: hidden;
   margin-bottom: 30px;
   flex-basis: 30%;
+  text-decoration: none;
 }
 
 .cards {
@@ -164,31 +169,44 @@ body {
   font-size: 24px;
   line-height: 32px;
 }
+.card-title-reg {
+	font-weight: 400;
+}
 
 .card-tag {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
-  color: #fff;
-  background: #262626;
-  border-radius: 2px;
-  padding: 1px 8px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	background: #262626;
+	border-radius: 2px;
+	padding: 1px 8px;
 }
 
 .card-info {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
-
+.card-buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 24px;
+}
+.card-price-bold {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 32px;
+	margin-left: 32px;
+}
 .rating {
-  margin-right: 26px;
-  color: #ffc107;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
+	margin-right: 26px;
+	color: #ffc107;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 32px;
 }
 
 .rating-star {
@@ -197,23 +215,26 @@ body {
 
 .price,
 .category {
-  color: #8c8c8c;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  padding-right: 10px;
+	color: #8c8c8c;
+	font-size: 18px;
+	line-height: 32px;
 }
 
 .price {
-  margin-right: 10px;
+	margin-right: 10px;
+}
+
+.ingredients {
+	color: #8c8c8c;
+	font-size: 18px;
+	line-height: 21px;
 }
 
 .category {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  max-width: 150px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 150px;
 }
 
 .price:after {
@@ -265,7 +286,7 @@ body {
   margin-right: 21px;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1360px) {
   .container {
     max-width: 960px;
   }
@@ -319,7 +340,7 @@ body {
 		flex-wrap: wrap;
 	}
 
-	.rating {
+	.card .rating {
 		flex-basis: 100%;
 	}
 
